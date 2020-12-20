@@ -1,0 +1,65 @@
+.h-100 {
+  height: 100%;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.v-data-table.clickable {
+  tr {
+    cursor: pointer;
+  }
+}
+
+.text--uppercase {
+  text-transform: capitalize;
+}
+
+// .shadow-0 {
+//   box-shadow: $shadow-0;
+// }
+
+// .shadow-1 {
+//   box-shadow: $shadow-1;
+// }
+
+// .shadow-2 {
+//   box-shadow: $shadow-2;
+// }
+
+// .shadow-3 {
+//   box-shadow: $shadow-3;
+// }
+
+// .shadow-4 {
+//   box-shadow: $shadow-4;
+// }
+
+// .shadow-5 {
+//   box-shadow: $shadow-5;
+// }
+
+// .shadow-6 {
+//   box-shadow: $shadow-6;
+// }
+
+// .shadow-7 {
+//   box-shadow: $shadow-6;
+// }
+
+// .shadow-8 {
+//   box-shadow: $shadow-8;
+// }
+
+.greyed .v-input__slot {
+  background-color: var(--md-grey-100) !important;
+}
+
+.invisible {
+  visibility: hidden;
+}

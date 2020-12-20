@@ -1,0 +1,10 @@
+[context.staging]
+  command="yarn build-staging"
+  publish="/dist"
+[context.master]
+  command="yarn build-production"
+  publish="/dist"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
