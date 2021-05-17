@@ -42,16 +42,34 @@
         )
           v-icon mdi-close-circle
         p.ma-0 {{ message }}
+
+    v-snackbar(
+      bottom
+      right
+      :timeout="-1"
+      :value="updateExists"
+    )
+      v-layout(
+        justify-space-between
+        align-center
+      )
+        | An update is available
+        v-btn.ml-2(
+          @click="refreshApp"
+          color="primary"
+        ) Refresh
 </template>
 
 <script>
 import VueExtendLayouts from 'vue-extend-layout'
+import update from '@/mixins/update'
 
 var appLog = require('debug')('app:app')
 
 export default {
   name: 'App',
   components: { VueExtendLayouts },
+  mixins: [update],
   data () {
     return {
       showSnack: false,
